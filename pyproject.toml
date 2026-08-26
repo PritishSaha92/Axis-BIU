@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "onboarding-fraud-graph"
+version = "0.1.0"
+description = "Publication-safe graph analytics examples for onboarding-fraud detection"
+readme = "README.md"
+requires-python = ">=3.8"
+dependencies = []
+keywords = ["fraud-detection", "graph-analytics", "risk", "network-analysis"]
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Topic :: Scientific/Engineering :: Information Analysis",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

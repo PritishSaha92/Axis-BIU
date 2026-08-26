@@ -1,0 +1,76 @@
+# Local archive containing original internship material. Never force-add.
+/_private/*
+!/_private/README.md
+
+# Raw data and generated outputs
+/data/*
+!/data/README.md
+/outputs/
+/artifacts/
+/checkpoints/
+
+# Original workspace folder names, should they be restored at the root
+/Final/
+/Latex Overleaf/
+/UVT_Beamer_Theme__2_/
+/figures/
+/graphframes/
+/third_party/
+
+# Publication-risk binary/reference formats
+*.pdf
+*.xlsx
+*.xls
+*.zip
+*.bak
+*.keytab
+*.pem
+*.p12
+*.pfx
+
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.secret
+secrets.*
+
+# Python / notebooks
+# Original notebooks contain saved execution output and remain local-only.
+*.ipynb
+# Only the reviewed, output-free public pipeline notebooks may be committed.
+!/notebooks/pipeline/*.ipynb
+# Keep this directory notebook-native; reusable package code belongs in src/.
+/notebooks/pipeline/*.py
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
+notebooks/generated/
+
+# Environments and IDEs
+.venv/
+venv/
+env/
+.idea/
+.vscode/
+*.code-workspace
+
+# Spark / Java / Scala build output
+spark-warehouse/
+metastore_db/
+derby.log
+target/
+.bsp/
+.metals/
+.scala-build/
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
